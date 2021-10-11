@@ -1,5 +1,6 @@
 import React from "react"
 import Menu from "../component/Header/Menu"
+import Header from "../component/Header"
 import { graphql } from "gatsby"
 import { createGlobalStyle } from 'styled-components'
 
@@ -38,6 +39,7 @@ const IndexPage = ({data}) => {
       logo={data.alldata.headers[0].logo[0].url}
       menuItems={data.alldata.headers[0].menuNav}
       />
+      <Header />
     </main>
   )
 }
