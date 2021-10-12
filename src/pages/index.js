@@ -35,11 +35,11 @@ const IndexPage = ({data}) => {
     <main>
       <GlobalStyle />
       <Menu
-      alternativeAlt={data.alldata.headers[0].logo[0].updatedAt}
-      logo={data.alldata.headers[0].logo[0].url}
-      menuItems={data.alldata.headers[0].menuNav}
+      {...data.alldata.headers[0]}
       />
-      <Header />
+      <Header 
+      
+      />
     </main>
   )
 }
