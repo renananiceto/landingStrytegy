@@ -21,14 +21,44 @@ export const BoxMenu = styled.div`
   justify-content: center;
   align-items: center;
   p:nth-child(3){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 235, 151);
-    border-radius: 5px;
-    width: 180px;
-    height: 48px;
+  width: 11.25rem;
+  height: 3rem;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: rgb(255, 235, 151);
+  overflow: hidden;
+  color: black;
+  
+&:hover:after {
+  width: 100%;
+}
+&:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(255, 206, 6);
+}
+
+
   }
+
+
+
+  
   p:nth-child(4){
     border-radius: 50%;
     border: solid black 1px;

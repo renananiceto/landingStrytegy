@@ -2,7 +2,6 @@ import React from 'react'
 import * as S from './styles'
 
 export default function Menu(props) {
-  console.log(props)
   const {logo, menuNav} = props
   return (
     <S.Container>

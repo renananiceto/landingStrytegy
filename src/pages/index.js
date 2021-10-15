@@ -15,7 +15,11 @@ const GlobalStyle = createGlobalStyle`
 export const query = graphql`
 
 {
+
   alldata{
+    contentHeaders{
+      content
+    }
     headers {
       logo{
         id
@@ -30,7 +34,6 @@ export const query = graphql`
 `
 
 const IndexPage = ({data}) => {
-  console.log(data)
   return (
     <main>
       <GlobalStyle />
@@ -38,7 +41,7 @@ const IndexPage = ({data}) => {
       {...data.alldata.headers[0]}
       />
       <Header 
-      
+      {...data.alldata.contentHeaders[0]}
       />
     </main>
   )
