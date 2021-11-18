@@ -15,6 +15,7 @@ export default function Header(props) {
                   <S.BigTitle>{item.bitTitle}</S.BigTitle>
                   <S.Title>{item.title}</S.Title>
                   <S.BoxBtn>
+                    <p>renan</p>
                     <S.Btn>{item.brnTible}</S.Btn>
                   </S.BoxBtn>
                 </S.ContainerTitle>
